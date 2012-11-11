@@ -20,7 +20,7 @@ class IkeaSpider(CrawlSpider):
 
     rules = (
         # Extract links matching 'item.php' and parse them with the spider's method parse_item
-        Rule(SgmlLinkExtractor(allow=('es/es/catalog/products/.*', )), callback='parse_item'),
+        Rule(SgmlLinkExtractor(allow=('catalog/products/.*', )), callback='parse_item'),
 
         # and follow links from them (since no callback means follow=True by default).
         Rule(SgmlLinkExtractor()),

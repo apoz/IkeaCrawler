@@ -13,3 +13,7 @@ NEWSPIDER_MODULE = 'ikea.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'ikea (+http://www.yourdomain.com)'
+
+LOG_FILE = 'scrapyOperation.log'
+CONCURRENT_REQUESTS_PER_DOMAIN = 3
+CONCURRENT_SPIDERS = 3
